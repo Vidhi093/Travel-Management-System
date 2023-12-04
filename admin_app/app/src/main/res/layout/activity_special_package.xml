@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_background"
+    tools:context=".special_package">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:focusable="true"
+        app:backgroundTint="@color/special_package"
+        app:fabSize="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_add_24"
+        tools:ignore="ContentDescription" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/summerl"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:id="@+id/summer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:drawableRight="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="Summer" />
+
+                <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="1800dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <GridView
+                            android:id="@+id/summerg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnWidth="200dp"
+                            android:gravity="center"
+                            android:horizontalSpacing="0dp"
+                            android:numColumns="9"
+                            android:scrollbarAlwaysDrawHorizontalTrack="true"
+                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                            android:scrollbars="horizontal"
+                            android:stretchMode="none"
+                            android:verticalSpacing="0dp" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/winterl"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:id="@+id/winter"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:drawableRight="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="Winter" />
+
+                <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="1800dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <GridView
+                            android:id="@+id/winterg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnWidth="200dp"
+                            android:gravity="center"
+                            android:horizontalSpacing="0dp"
+                            android:numColumns="9"
+                            android:scrollbarAlwaysDrawHorizontalTrack="true"
+                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                            android:scrollbars="horizontal"
+                            android:stretchMode="none"
+                            android:verticalSpacing="0dp" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/monsoonl"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:id="@+id/monsoon"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="left|center"
+                android:drawableRight="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="Monsoon" />
+
+                <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="1800dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <GridView
+                            android:id="@+id/monsoong"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnWidth="200dp"
+                            android:gravity="center"
+                            android:horizontalSpacing="0dp"
+                            android:numColumns="9"
+                            android:scrollbarAlwaysDrawHorizontalTrack="true"
+                            android:scrollbarAlwaysDrawVerticalTrack="true"
+                            android:scrollbars="horizontal"
+                            android:stretchMode="none"
+                            android:verticalSpacing="0dp" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+            </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

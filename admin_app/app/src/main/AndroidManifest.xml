@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Admin_app"
+        tools:targetApi="31" >
+        <activity
+            android:name=".notification"
+            android:exported="false" />
+        <activity
+            android:name=".update_tourguide"
+            android:exported="false" />
+        <activity
+            android:name=".last_tourguide"
+            android:exported="false" />
+        <activity
+            android:name=".special_hotels"
+            android:exported="false" />
+        <activity
+            android:name=".last_special"
+            android:exported="false" />
+        <activity
+            android:name=".monsoon_update"
+            android:exported="false" />
+        <activity
+            android:name=".winter_update"
+            android:exported="false" />
+        <activity
+            android:name=".summer_update"
+            android:exported="false" />
+        <activity
+            android:name=".upload_tourguide"
+            android:exported="false" />
+        <activity
+            android:name=".tour_guide"
+            android:exported="false" />
+        <activity
+            android:name=".special_package"
+            android:exported="false" />
+        <activity
+            android:name=".update_info_attraction"
+            android:exported="false" />
+        <activity
+            android:name=".update_info_popular"
+            android:exported="false" />
+        <activity
+            android:name=".update_info_destination"
+            android:exported="false" />
+        <activity
+            android:name=".update_info_advisory"
+            android:exported="false" />
+        <activity
+            android:name=".last_attraction"
+            android:exported="false" />
+        <activity
+            android:name=".delete_update_platinum"
+            android:exported="false" />
+        <activity
+            android:name=".update_attraction"
+            android:exported="false" />
+        <activity
+            android:name=".last_platinum"
+            android:exported="false" />
+        <activity
+            android:name=".update_bronze"
+            android:exported="false" />
+        <activity
+            android:name=".update_silver"
+            android:exported="false" />
+        <activity
+            android:name=".update_gold"
+            android:exported="false" />
+        <activity
+            android:name=".update_platinum"
+            android:exported="false" />
+        <activity
+            android:name=".update_hotel_package"
+            android:exported="false" />
+        <activity
+            android:name=".upload_hotel_package"
+            android:exported="false" />
+        <activity
+            android:name=".update_popular"
+            android:exported="false" />
+        <activity
+            android:name=".last_popular"
+            android:exported="false" />
+        <activity
+            android:name=".last_destination"
+            android:exported="false" />
+        <activity
+            android:name=".update_destination"
+            android:exported="false" />
+        <activity
+            android:name=".last_advisory"
+            android:exported="false" />
+        <activity
+            android:name=".add_advisory"
+            android:exported="false" />
+        <activity
+            android:name=".update_advisory"
+            android:exported="false" />
+        <activity
+            android:name=".Attraction"
+            android:exported="false" />
+        <activity
+            android:name=".Popular_dest"
+            android:exported="false" />
+        <activity
+            android:name=".Upload_Destination"
+            android:exported="false" />
+        <activity
+            android:name=".home_page"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
