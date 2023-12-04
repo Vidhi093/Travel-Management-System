@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/destfrag"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/all_background"
+    tools:context=".Destination_Fragment">
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="10dp"
+           android:paddingBottom="50dp">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_marginTop="20dp">
+
+               <AutoCompleteTextView
+                   android:id="@+id/search"
+                   android:layout_width="250dp"
+                   android:layout_height="50dp"
+                   android:background="@drawable/searchbar_shape"
+                   android:drawableStart="@drawable/search"
+                   android:drawablePadding="20dp"
+                   android:hint="Search Places"
+                   android:inputType="text|textCapWords"
+                   android:paddingStart="20dp"
+                   android:singleLine="true"
+                   android:textColor="@color/black"
+                   android:textColorHint="@color/black" />
+
+               <Button
+                   android:id="@+id/searchbtn1"
+                   android:layout_width="match_parent"
+                   android:layout_height="45dp"
+                   android:layout_gravity="center"
+                   android:text="Search"
+                   android:layout_marginLeft="10dp"
+                   android:background="@drawable/searchbtn"
+                   app:backgroundTint="@null"
+                   android:textColor="@color/black"
+                   />
+
+           </LinearLayout>
+
+           <GridView
+               android:id="@+id/searchg"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:numColumns="1"/>
+
+           <GridView
+               android:id="@+id/searchstate"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:numColumns="1"/>
+
+           <GridView
+               android:id="@+id/searchattract"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:numColumns="1"/>
+
+           <GridView
+               android:id="@+id/searchpopular"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="30dp"
+               android:numColumns="1"/>
+
+           <LinearLayout
+               android:id="@+id/summerl"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginBottom="5dp"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/summer"
+                   android:layout_width="match_parent"
+                   android:layout_height="48dp"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:gravity="left|center"
+                   android:drawableRight="@drawable/next"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/black"
+                   android:text="Summer" />
+
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="15dp">
+
+                   <FrameLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="1800dp"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal">
+
+                           <GridView
+                               android:id="@+id/summerg"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:columnWidth="200dp"
+                               android:gravity="center"
+                               android:horizontalSpacing="0dp"
+                               android:numColumns="9"
+                               android:scrollbarAlwaysDrawHorizontalTrack="true"
+                               android:scrollbarAlwaysDrawVerticalTrack="true"
+                               android:scrollbars="horizontal"
+                               android:stretchMode="none"
+                               android:verticalSpacing="0dp" />
+
+                       </LinearLayout>
+                   </FrameLayout>
+
+               </HorizontalScrollView>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/winterl"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginBottom="5dp"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/winter"
+                   android:layout_width="match_parent"
+                   android:layout_height="48dp"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:gravity="left|center"
+                   android:drawableRight="@drawable/next"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/black"
+                   android:text="Winter" />
+
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="15dp">
+
+                   <FrameLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="1800dp"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal">
+
+                           <GridView
+                               android:id="@+id/winterg"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:columnWidth="200dp"
+                               android:gravity="center"
+                               android:horizontalSpacing="0dp"
+                               android:numColumns="9"
+                               android:scrollbarAlwaysDrawHorizontalTrack="true"
+                               android:scrollbarAlwaysDrawVerticalTrack="true"
+                               android:scrollbars="horizontal"
+                               android:stretchMode="none"
+                               android:verticalSpacing="0dp" />
+
+                       </LinearLayout>
+                   </FrameLayout>
+
+               </HorizontalScrollView>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/monsoonl"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_marginBottom="15dp"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/monsoon"
+                   android:layout_width="match_parent"
+                   android:layout_height="48dp"
+                   android:textSize="20sp"
+                   android:textStyle="bold"
+                   android:gravity="left|center"
+                   android:drawableRight="@drawable/next"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/black"
+                   android:text="Monsoon" />
+
+               <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="30dp">
+
+                   <FrameLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <LinearLayout
+                           android:layout_width="1800dp"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal">
+
+                           <GridView
+                               android:id="@+id/monsoong"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:columnWidth="200dp"
+                               android:gravity="center"
+                               android:horizontalSpacing="0dp"
+                               android:numColumns="9"
+                               android:scrollbarAlwaysDrawHorizontalTrack="true"
+                               android:scrollbarAlwaysDrawVerticalTrack="true"
+                               android:scrollbars="horizontal"
+                               android:stretchMode="none"
+                               android:verticalSpacing="0dp" />
+
+                       </LinearLayout>
+                   </FrameLayout>
+
+               </HorizontalScrollView>
+
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+
+</FrameLayout>

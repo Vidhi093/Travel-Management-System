@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_background"
+    tools:context=".contactus_Fragment">
+
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="10dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_marginTop="10dp"
+               android:paddingStart="15dp"
+               android:paddingTop="6dp"
+               android:paddingBottom="6dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:background="@drawable/button"
+               android:textSize="22sp"
+               android:text="Call Us"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="15dp"/>
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:padding="3dp"
+                   android:layout_width="40dp"
+                   android:gravity="center"
+                   android:layout_height="38dp"
+                   android:src="@drawable/call"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="+918999325568"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   android:padding="4dp"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="5dp"/>
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:padding="3dp"
+                   android:layout_width="40dp"
+                   android:layout_height="38dp"
+                   android:src="@drawable/call"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="+918625035582"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   android:padding="4dp"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="5dp"/>
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:padding="3dp"
+                   android:layout_width="40dp"
+                   android:layout_height="38dp"
+                   android:src="@drawable/call"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="+918087971909"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   android:padding="4dp"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="5dp"/>
+
+           <TextView
+               android:layout_marginTop="40dp"
+               android:paddingStart="15dp"
+               android:paddingTop="6dp"
+               android:paddingBottom="6dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:background="@drawable/button"
+               android:textSize="22sp"
+               android:text="Mail Us"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="15dp"/>
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:padding="3dp"
+                   android:layout_width="40dp"
+                   android:layout_height="38dp"
+                   android:src="@drawable/mail"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="vidhip996@gmail.com"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   android:padding="4dp"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="5dp"/>
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:padding="3dp"
+                   android:layout_width="40dp"
+                   android:layout_height="38dp"
+                   android:src="@drawable/mail"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="jankisingh3103@gmail"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   android:padding="4dp"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="5dp"/>
+
+           <LinearLayout
+               android:layout_marginTop="5dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:padding="3dp"
+                   android:layout_width="40dp"
+                   android:layout_height="38dp"
+                   android:src="@drawable/mail"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="sakshibhosale286@gmail.com"
+                   android:textColor="@color/black"
+                   android:textSize="20sp"
+                   android:padding="4dp"/>
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/gray"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="40dp"/>
+
+       </LinearLayout>
+   </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_background"
+    android:id="@+id/container_home"
+    tools:context=".Home_Fragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:id="@+id/destl"
+                android:elevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/destt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="Destination"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="26sp"
+                    app:drawableRightCompat="@drawable/next" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="2800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/grid_dest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="14"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/advl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/advt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="Advisory"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    android:layout_marginBottom="5dp"
+                    app:drawableRightCompat="@drawable/next" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="2800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/grid_advisory"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="14"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/speciall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/specialt"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="Special Package"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:drawableRightCompat="@drawable/next" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="2800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/grid_special"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="14"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/attractl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="100dp">
+
+                <TextView
+                    android:id="@+id/attractt"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alegreya_sans"
+                    android:text="Attraction"
+                    android:textColor="@color/black"
+                    android:textSize="26sp"
+                    app:drawableRightCompat="@drawable/next" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="2800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/grid_att"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="14"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</FrameLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#49657A</color>
+    <color name="dark">#212B2D</color>
+    <color name="middle">#2E4B51</color>
+    <color name="light">#3F8494</color>
+    <color name="light1">#94E5F7</color>
+    <color name="grey">#7F7F7F</color>
+
+    <color name="theme">#69B7BB</color>
+    <color name="gray">#DDDDDD</color>
+
+    <color name="darkb">#454545</color>
+    <color name="total">#000000</color>
+
+
+
+    <color name="destination">#FFDFDF</color>
+    <color name="advisory">#DADEFF</color>
+    <color name="special_package">#FEE5C3</color>
+    <color name="hotel_package">#E0FFDA</color>
+
+    <color name="all_background">#F6F5F0</color>
+    <color name="nav">#A0EBE4</color>
+</resources>

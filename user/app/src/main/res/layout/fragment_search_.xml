@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/searchfrag"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Search_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/search"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/searchbar_shape"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="10dp"
+                    android:hint="Search Hotel/Guide"
+                    android:inputType="text|textCapWords"
+                    android:paddingStart="9dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    />
+                <Button
+                    android:id="@+id/searchbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:text="Search"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/searchbtn"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/searchhotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:numColumns="1"/>
+
+            <GridView
+                android:id="@+id/searchtour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:numColumns="1"/>
+
+            <LinearLayout
+                android:id="@+id/platniuml"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/platnium"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:drawableRight="@drawable/next"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:text="Platinum Package" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="1800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/platniumg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="9"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/goldl"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:drawableRight="@drawable/next"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:text="Gold Package" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="1800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/goldg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="9"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/silverl"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/silver"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:drawableRight="@drawable/next"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:text="Silver Package" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="1800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/silverg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="9"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bronzel"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/bronze"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:drawableRight="@drawable/next"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:text="Bronze Package" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="1800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/bronzeg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="9"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tourl"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tour"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+                    android:drawableRight="@drawable/next"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:text="Tour Guide" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="1800dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <GridView
+                                android:id="@+id/tourg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:columnWidth="200dp"
+                                android:gravity="center"
+                                android:horizontalSpacing="0dp"
+                                android:numColumns="9"
+                                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                                android:scrollbarAlwaysDrawVerticalTrack="true"
+                                android:scrollbars="horizontal"
+                                android:stretchMode="none"
+                                android:verticalSpacing="0dp" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
